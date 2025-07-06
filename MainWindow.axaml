@@ -5,5 +5,16 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaTest.MainWindow"
         Title="AvaloniaTest">
-    Welcome to Avalonia!
+        
+        
+        <Grid Background="{DynamicResource PrimaryBackground}" ColumnDefinitions="200, *">
+                <Border Padding="20">
+                        <Grid RowDefinitions="*, Auto">
+                                <StackPanel>
+                                        <Image Source="Assets/Images/logo.png"></Image>
+                                </StackPanel>
+                        </Grid>
+                </Border>
+        </Grid>
+        
 </Window>
