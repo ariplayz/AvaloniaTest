@@ -15,7 +15,7 @@
                                 <StackPanel Spacing="12">
                                         <Image Source="Assets/Images/logo.png"></Image>
                                         
-                                        <Button HorizontalAlignment="Stretch">
+                                        <Button HorizontalAlignment="Stretch" Click="ClickHandler">
                                                 <StackPanel Orientation="Horizontal">
                                                         <Label Classes="icon" Content="&#xe2c6;"></Label>
                                                         <Label Content="Home"></Label>

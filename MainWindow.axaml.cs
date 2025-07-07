@@ -1,4 +1,6 @@
 using Avalonia.Controls;
+using Avalonia.Interactivity;
+using Tmds.DBus.Protocol;
 
 namespace AvaloniaTest;
 
@@ -8,4 +10,9 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
+
+    public void ClickHandler(object sender, RoutedEventArgs args){
+        
+    }
+    
 }
