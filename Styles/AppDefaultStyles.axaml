@@ -3,10 +3,9 @@
     <Design.PreviewWith>
         <Border Padding="20" Background="{DynamicResource PrimaryBackgroundGradient}" Width="200">
             <!-- Add Controls for Previewer Here -->
-            <Button HorizontalAlignment="Stretch">
+            <Button Classes="transparent">
                 <StackPanel Orientation="Horizontal">
-                    <Label Classes="icon" Content="&#xe2c6;"></Label>
-                    <Label Content="Home"></Label>
+                    <Label Classes="icononly" Content="&#xe2c6;"></Label>
                 </StackPanel>
             </Button>
             
@@ -28,8 +27,17 @@
         <Setter Property="Padding" Value="0 3 5 0"></Setter>
     </Style>
     
+    <Style Selector="Label.icononly">
+        <Setter Property="FontFamily" Value="{DynamicResource Phosphor}"></Setter>
+        <Setter Property="Padding" Value="0 0 0 0"></Setter>
+    </Style>
+    
+    <Style Selector="Button.transparent">
+        <Setter Property="Background" Value="Transparent"></Setter>
+    </Style>
+    
     <Style Selector="Label.iconfill">
-        <Setter Property="FontFamily" Value="{DynamicResource PhosphorFill}"</Setter>
+        <Setter Property="FontFamily" Value="{DynamicResource PhosphorFill}"></Setter>
         <Setter Property="Padding" Value="0 3 5 0"></Setter>
     </Style>
     
@@ -37,5 +45,4 @@
         <Setter Property="Foreground" Value="{DynamicResource PrimaryHoverForeground}"></Setter>
         <Setter Property="Background" Value="{DynamicResource PrimaryHoverBackground}"></Setter>
     </Style>
-    
 </Styles>
