@@ -5,6 +5,7 @@
         mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
         Width="1024" Height="600"
         x:Class="AvaloniaTest.MainWindow"
+        
         Title="AvaloniaTest">
         
         
@@ -14,12 +15,12 @@
                                 <StackPanel Spacing="12">
                                         <Image Source="Assets/Images/logo.png"></Image>
                                         
-                                        <Button Content="Home" HorizontalAlignment="Stretch"></Button>
-                                        <Button Content="Process" HorizontalAlignment="Stretch"></Button>
-                                        <Button Content="Actions" HorizontalAlignment="Stretch"></Button>
-                                        <Button Content="Macros" HorizontalAlignment="Stretch"></Button>
-                                        <Button Content="Reporter" HorizontalAlignment="Stretch"></Button>
-                                        <Button Content="History" HorizontalAlignment="Stretch"></Button>
+                                        <Button HorizontalAlignment="Stretch">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Label Classes="icon" Content="&#xe2c6;"></Label>
+                                                        <Label Content="Home"></Label>
+                                                </StackPanel>
+                                        </Button>
                                         
                                 </StackPanel>
                                 
